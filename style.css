@@ -9,6 +9,7 @@ body {
 nav {
   color: #7f1c9e;
   background: white;
+  display: flex;
   width: 100%;
   margin: 0;
   display: inline-block;
@@ -16,12 +17,14 @@ nav {
 }
 
 ul {
+  display: flex;
+  flex-flow: row wrap;
   list-style-type: none;
+  justify-content: space-around;
 }
 
 li {
   width: 20%;
-  float: left;
   margin: 20px auto;
 }
 
@@ -75,6 +78,12 @@ img {
 
   li {
     width: 100%;
-    float: left;
+  }
+  ul {
+    display: inline-flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 }
